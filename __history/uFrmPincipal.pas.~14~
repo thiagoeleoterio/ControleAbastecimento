@@ -1,0 +1,206 @@
+unit uFrmPincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.TitleBarCtrls,
+  Vcl.Imaging.pngimage, Vcl.ExtCtrls, Vcl.VirtualImage, Vcl.WinXCtrls,
+  Vcl.Themes, System.ImageList, Vcl.ImgList, Vcl.VirtualImageList,
+  Vcl.BaseImageCollection, Vcl.ImageCollection,
+  Vcl.Styles, Vcl.ComCtrls, Data.Bind.Controls, Vcl.WinXCalendars, Vcl.Buttons,
+  Vcl.Bind.Navigator, Vcl.Grids;
+
+type
+  TFrmPrincipal = class(TForm)
+    VirtualImageList1: TVirtualImageList;
+    ImageCollection1: TImageCollection;
+    SplitView: TSplitView;
+    pnlToolbar: TPanel;
+    lblTitle: TLabel;
+    MenuVirtualImage: TVirtualImage;
+    NavPanel: TPanel;
+    Image5: TImage;
+    AcctsButton: TButton;
+    LeadsButton: TButton;
+    SalesButton: TButton;
+    MarketingButton: TButton;
+    CalendarButton: TButton;
+    UsersButton: TButton;
+    VCLStylesCB: TComboBox;
+    PageControl: TPageControl;
+    DashboardTab: TTabSheet;
+    Panel5: TPanel;
+    Label4: TLabel;
+    VirtualImage1: TVirtualImage;
+    FlowPanel1: TFlowPanel;
+    RelativePanel1: TRelativePanel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    VirtualImage9: TVirtualImage;
+    RelativePanel2: TRelativePanel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    VirtualImage10: TVirtualImage;
+    RelativePanel3: TRelativePanel;
+    Label11: TLabel;
+    Label12: TLabel;
+    Label13: TLabel;
+    VirtualImage11: TVirtualImage;
+    RelativePanel4: TRelativePanel;
+    Label14: TLabel;
+    Label15: TLabel;
+    Label16: TLabel;
+    VirtualImage12: TVirtualImage;
+    RelativePanel5: TRelativePanel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    VirtualImage13: TVirtualImage;
+    RelativePanel6: TRelativePanel;
+    Label20: TLabel;
+    Label21: TLabel;
+    Label22: TLabel;
+    VirtualImage14: TVirtualImage;
+    AccountsTab: TTabSheet;
+    Panel7: TPanel;
+    Label24: TLabel;
+    VirtualImage2: TVirtualImage;
+    AcctsRelativePanel: TRelativePanel;
+    AcctSearchBox: TSearchBox;
+    ExportAcctsButton: TSpeedButton;
+    RemoveAcctButton: TSpeedButton;
+    CreateAcctButton: TSpeedButton;
+    AccountsSG: TStringGrid;
+    BindNavigator4: TBindNavigator;
+    LeadsTab: TTabSheet;
+    Splitter1: TSplitter;
+    Splitter2: TSplitter;
+    Splitter3: TSplitter;
+    BindNavigator1: TBindNavigator;
+    Panel2: TPanel;
+    Label1: TLabel;
+    VirtualImage3: TVirtualImage;
+    LeadsRelativePanel: TRelativePanel;
+    CreateLeadButton: TSpeedButton;
+    ExportLeadsButton: TSpeedButton;
+    LeadsSearchBox: TSearchBox;
+    ViewLeadButton: TSpeedButton;
+    NewLeadsPanel: TPanel;
+    Label27: TLabel;
+    NewLeadsSG: TStringGrid;
+    ActiveLeadsPanel: TPanel;
+    Label28: TLabel;
+    ActiveLeadsSG: TStringGrid;
+    ProposalSentPanel: TPanel;
+    Label29: TLabel;
+    ProposalSentLeadsSG: TStringGrid;
+    ClosedPanel: TPanel;
+    Label30: TLabel;
+    ClosedLeadsSG: TStringGrid;
+    SalesTab: TTabSheet;
+    Panel6: TPanel;
+    Label23: TLabel;
+    VirtualImage4: TVirtualImage;
+    ProposalsRelativePanel: TRelativePanel;
+    SalesSearchBox: TSearchBox;
+    CancelProposalButton: TSpeedButton;
+    CompleteProposalButton: TSpeedButton;
+    ProposalStringGrid: TStringGrid;
+    BindNavigator3: TBindNavigator;
+    MarketingTab: TTabSheet;
+    Panel3: TPanel;
+    Label2: TLabel;
+    VirtualImage5: TVirtualImage;
+    MarketingRelativePanel: TRelativePanel;
+    EmailsSearchBox: TSearchBox;
+    ExportEmailsButton: TSpeedButton;
+    StringGrid2: TStringGrid;
+    CalendarTab: TTabSheet;
+    CalendarView1: TCalendarView;
+    Panel4: TPanel;
+    Label3: TLabel;
+    VirtualImage6: TVirtualImage;
+    UsersTab: TTabSheet;
+    Panel8: TPanel;
+    Label25: TLabel;
+    VirtualImage7: TVirtualImage;
+    UsersRelativePanel: TRelativePanel;
+    SearchBox7: TSearchBox;
+    CreateUserButton: TSpeedButton;
+    RemoveUserButton: TSpeedButton;
+    UsersSG: TStringGrid;
+    BindNavigator5: TBindNavigator;
+    DashboardButton: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure VCLStylesCBChange(Sender: TObject);
+    procedure FormResize(Sender: TObject);
+  private
+    { Private declarations }
+    procedure UpdateBotoes;
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+var
+  StyleName: string;
+begin
+  for StyleName in TStyleManager.StyleNames do
+    VCLStylesCB.Items.Add(StyleName);
+
+  TStyleManager.TrySetStyle('Windows10 SlateGray');
+
+  VCLStylesCB.ItemIndex := VCLStylesCB.Items.IndexOf(TStyleManager.ActiveStyle.Name);
+
+  UpdateBotoes;
+end;
+
+procedure TFrmPrincipal.FormResize(Sender: TObject);
+begin
+  if FrmPrincipal.Width<=640 then
+  begin
+    if SplitView.Opened=True then SplitView.Opened := False;
+  end
+  else
+  begin
+    if SplitView.Opened=False then SplitView.Opened := True;
+  end;
+end;
+
+procedure TFrmPrincipal.VCLStylesCBChange(Sender: TObject);
+begin
+  TStyleManager.TrySetStyle(VCLStylesCB.Text);
+end;
+
+procedure TFrmPrincipal.UpdateBotoes;
+var
+  LStyle: Dword;
+begin
+  LStyle := GetWindowLong(DashboardButton.Handle, GWL_STYLE);
+  SetWindowLong(DashboardButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  DashboardButton.Caption := '          '+DashboardButton.Hint;
+  SetWindowLong(AcctsButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  AcctsButton.Caption := '          '+AcctsButton.Hint;
+  SetWindowLong(LeadsButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  LeadsButton.Caption := '          '+LeadsButton.Hint;
+  SetWindowLong(SalesButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  SalesButton.Caption := '          '+SalesButton.Hint;
+  SetWindowLong(MarketingButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  MarketingButton.Caption := '          '+MarketingButton.Hint;
+  SetWindowLong(CalendarButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  CalendarButton.Caption := '          '+CalendarButton.Hint;
+  SetWindowLong(UsersButton.Handle, GWL_STYLE, LStyle or BS_LEFT);
+  UsersButton.Caption := '          '+UsersButton.Hint;
+end;
+
+end.

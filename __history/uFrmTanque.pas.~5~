@@ -1,0 +1,46 @@
+unit uFrmTanque;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.VirtualImage, Vcl.StdCtrls,
+  Vcl.ExtCtrls,
+  uClasse.Tanque;
+
+type
+  TfrmTanque = class(TForm)
+    Panel2: TPanel;
+    Label1: TLabel;
+    VirtualImage3: TVirtualImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure Abrir(ATanque: TClasseTanque);
+  end;
+
+var
+  frmTanque: TfrmTanque;
+
+implementation
+
+uses
+  uFrmPrincipal, uClasse.Tanque;
+
+{$R *.dfm}
+
+{ TfrmTanque }
+
+procedure TfrmTanque.Abrir(ATanque: TClasseTanque);
+begin
+  try
+    frmTanque.ShowModal;
+    //ATanque.Descricao :=
+
+  finally
+    frmTanque.Free;
+  end;
+end;
+
+end.

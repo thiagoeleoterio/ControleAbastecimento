@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/11 05:58:09.000.084,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 05:58:24.000.157,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.pas</Transaction>
+    <Transaction>2022/03/11 05:58:24.000.157,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2022/03/11 05:58:31.000.630,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\ControleAbastecimento.dproj</Transaction>
+    <Transaction>2022/03/11 05:59:37.000.532,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.pas</Transaction>
+    <Transaction>2022/03/11 06:08:34.000.725,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.pas=</Transaction>
+    <Transaction>2022/03/11 06:08:47.000.988,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.dfm</Transaction>
+    <Transaction>2022/03/11 06:08:47.000.965,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.pas</Transaction>
+    <Transaction>2022/03/11 06:08:47.000.988,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.pas</Transaction>
+    <Transaction>2022/03/11 06:08:47.000.965,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2022/03/11 06:09:20.000.584,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.pas</Transaction>
+    <Transaction>2022/03/11 06:09:20.000.584,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uMainForm.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmPrincipal.dfm</Transaction>
+    <Transaction>2022/03/11 07:27:28.000.425,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 07:27:44.000.498,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uDMPrincipal.pas</Transaction>
+    <Transaction>2022/03/11 07:27:44.000.498,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uDMPrincipal.dfm</Transaction>
+    <Transaction>2022/03/11 08:15:50.000.149,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 08:16:35.000.245,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Tanque.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 08:21:50.000.932,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 08:22:21.000.491,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmTanque.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 08:22:21.000.491,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmTanque.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.dfm</Transaction>
+    <Transaction>2022/03/11 10:23:37.000.079,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmBomba.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmTanque.dfm</Transaction>
+    <Transaction>2022/03/11 10:23:37.000.079,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmBomba.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmTanque.pas</Transaction>
+    <Transaction>2022/03/11 10:28:24.000.615,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Bomba.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Tanque.pas</Transaction>
+    <Transaction>2022/03/11 10:28:30.000.863,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Tanque.pas</Transaction>
+    <Transaction>2022/03/11 11:35:04.000.340,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmAbastecimento.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmBomba.dfm</Transaction>
+    <Transaction>2022/03/11 11:35:04.000.340,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmAbastecimento.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmBomba.pas</Transaction>
+    <Transaction>2022/03/11 11:54:28.000.319,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmBomba.pas</Transaction>
+    <Transaction>2022/03/11 11:55:22.000.199,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Abastecimento.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Bomba.pas</Transaction>
+    <Transaction>2022/03/11 11:56:15.000.394,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uClasse.Bomba.pas</Transaction>
+    <Transaction>2022/03/12 15:24:24.000.154,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+    <Transaction>2022/03/12 15:24:34.000.935,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmRelatorio.dfm=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.dfm</Transaction>
+    <Transaction>2022/03/12 15:24:34.000.935,C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\uFrmRelatorio.pas=C:\Users\User\Documents\Embarcadero\Studio\Projects\Win32\ControleAbastecimento\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

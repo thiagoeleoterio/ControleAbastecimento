@@ -1,0 +1,59 @@
+unit uClasse.Abastecimento;
+
+interface
+
+type
+  TClasseAbastecimento = class
+  private
+
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+    property IdAbastecimento: Integer read FIdAbastecimento write SetIdAbastecimento;
+    property IdBomba: Integer read FIdBomba write SetIdBomba;
+    property Data: TDateTime read FData write SetData;
+    property QtdLitros: Double read FQtdLitros write SetQtdLitros;
+    property Valor: Double read FValor write SetValor;
+    property ImpostoPercentual: Double read FImpostoPercentual write SetImpostoPercentual;
+    property ImpostoValor: Double read FImpostoValor write SetImpostoValor;
+    property ValorTotal: Double read FValorTotal write SetValorTotal;
+
+    procedure Salvar(ABomba: TClasseBomba);
+    procedure Excluir(IDBomba: Integer);
+
+  end;
+
+implementation
+
+uses
+  uDMPrincipal;
+
+{ TClasseTanque }
+
+{ TClasseTanque }
+
+procedure TClasseAbastecimento.Excluir(IDAbastecimeto: Integer);
+begin
+  if dmPrincipal.qryBomba.Locate('IDBomba', IDBomba, []) then
+  begin
+    dmPrincipal.qryBomba.Delete;
+    dmPrincipal.qryBomba.Close;
+    dmPrincipal.qryBomba.Open;
+  end;
+end;
+
+procedure TClasseAbastecimento.Salvar(ABastecimento: TClasseAbastecimento);
+begin
+  dmPrincipal.qryBomba.Append;
+  dmPrincipal.qryBomba.FieldByName('Des_Bomba').Value := ABomba.Descricao;
+  dmPrincipal.qryBomba.FieldByName('IDTanque').Value := ABomba.IDTanque;
+  dmPrincipal.qryBomba.Post;
+
+  dmPrincipal.qryBomba.Close;
+  dmPrincipal.qryBomba.Open;
+end;
+
+
+end.

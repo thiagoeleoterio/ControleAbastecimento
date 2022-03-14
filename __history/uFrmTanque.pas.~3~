@@ -1,0 +1,28 @@
+unit uFrmTanque;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.VirtualImage, Vcl.StdCtrls,
+  Vcl.ExtCtrls;
+
+type
+  TfrmTanque = class(TForm)
+    Panel2: TPanel;
+    Label1: TLabel;
+    VirtualImage3: TVirtualImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTanque: TfrmTanque;
+
+implementation
+
+{$R *.dfm}
+
+end.

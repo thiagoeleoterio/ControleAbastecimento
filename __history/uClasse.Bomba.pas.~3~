@@ -1,0 +1,84 @@
+unit uClasse.Bomba;
+
+interface
+
+type
+  TClasseBomba = class
+  private
+    FDescricao: String;
+    FIDBomba: Integer;
+    FIDTanque: Integer;
+    procedure SetDescricao(const Value: String);
+    procedure SetIDBomba(const Value: Integer);
+    procedure SetIDTanque(const Value: Integer);
+
+  public
+    constructor Create;
+    destructor Destroy; override;
+
+  property IDBomba: Integer read FIDBomba write SetIDBomba;
+  property IDBomba: Integer read FIDTanque write SetIDTanque;
+  property Descricao: String read FDescricao write SetDescricao;
+  procedure Salvar(ABomba: TClasseBomba);
+  procedure Excluir(IDBomba: Integer);
+
+  end;
+
+implementation
+
+uses
+  uDMPrincipal;
+
+{ TClasseTanque }
+
+{ TClasseTanque }
+
+constructor TClasseBomba.Create;
+begin
+
+end;
+
+destructor TClasseBomba.Destroy;
+begin
+
+  inherited;
+end;
+
+procedure TClasseBomba.Excluir(IDBomba: Integer);
+begin
+  if dmPrincipal.qryBomba.Locate('IDBomba', IDBomba, []) then
+  begin
+    dmPrincipal.qryBomba.Delete;
+    dmPrincipal.qryBomba.Close;
+    dmPrincipal.qryBomba.Open;
+  end;
+end;
+
+procedure TClasseBomba.Salvar(ABomba: TClasseTanque);
+begin
+  dmPrincipal.qryBomba.Append;
+  dmPrincipal.qryBomba.FieldByName('Descricao').Value := ABomba.Descricao;
+  dmPrincipal.qryBomba.Fiel
+
+  dmPrincipal.qryBomba.Post;
+
+  dmPrincipal.qryBomba.Close;
+  dmPrincipal.qryBomba.Open;
+end;
+
+procedure TClasseBomba.SetDescricao(const Value: String);
+begin
+  FDescricao := Value;
+end;
+
+procedure TClasseBomba.SetIDBomba(const Value: Integer);
+begin
+  FIDBomba := Value;
+end;
+
+procedure TClasseBomba.SetIDTanque(const Value: Integer);
+begin
+  FIDTanque := Value;
+end;
+
+end.

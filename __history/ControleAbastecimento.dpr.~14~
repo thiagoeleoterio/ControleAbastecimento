@@ -1,0 +1,22 @@
+program ControleAbastecimento;
+
+uses
+  Vcl.Forms,
+  uFrmPrincipal in 'uFrmPrincipal.pas' {FrmPrincipal},
+  Vcl.Themes,
+  Vcl.Styles,
+  uDMPrincipal in 'uDMPrincipal.pas' {dmPrincipal: TDataModule},
+  uClasse.Tanque in 'uClasse.Tanque.pas',
+  uFrmBomba in 'uFrmBomba.pas' {frmTanque};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Aqua Light Slate');
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TdmPrincipal, dmPrincipal);
+  Application.CreateForm(TfrmTanque, frmTanque);
+  Application.Run;
+end.
